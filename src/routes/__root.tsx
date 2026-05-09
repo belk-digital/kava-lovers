@@ -10,6 +10,7 @@ import {
 
 import appCss from "../styles.css?url";
 import { SiteLayout } from "../components/SiteLayout";
+import { I18nProvider } from "../lib/i18n";
 
 function NotFoundComponent() {
   return (
@@ -130,7 +131,9 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
   return (
     <QueryClientProvider client={queryClient}>
-      <SiteLayout />
+      <I18nProvider>
+        <SiteLayout />
+      </I18nProvider>
     </QueryClientProvider>
   );
 }
