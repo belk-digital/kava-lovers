@@ -64,10 +64,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Hemp Love Farms · Love Kava | Premium Hemp & Kava in Doral, FL" },
       { name: "twitter:description", content: "Doral's premium hemp, kava bar and wellness destination. Shop CBD, vapes, exotic snacks. Delivery, curbside pickup. Latino-owned. 5★ rated." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8ab5cb2a-98a1-4453-858f-689850dbc9f0/id-preview-6d1f17fc--c14428e8-2855-43d9-98c6-486ed4703277.lovable.app-1778349889301.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/8ab5cb2a-98a1-4453-858f-689850dbc9f0/id-preview-6d1f17fc--c14428e8-2855-43d9-98c6-486ed4703277.lovable.app-1778349889301.png" },
+      { property: "og:image", content: "https://hemplovefarms.com/storefront.jpg" },
+      { name: "twitter:image", content: "https://hemplovefarms.com/storefront.jpg" },
     ],
     links: [
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
